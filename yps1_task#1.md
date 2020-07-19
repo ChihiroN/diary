@@ -75,6 +75,8 @@ sudo vi /etc/ssh/sshd_config
 [元ツイ2](https://twitter.com/yotaro__ok/status/1284115619034484737)<br>
 
 #### 余裕があれば
-```sudo -s /bin/dd if=/dev/zero of=/var/swap.1 bs=1M count=1024```
-```sudo -s /sbin/mkswap /var/swap.1```
-```sudo -s /sbin/swapon /var/swap.1```
+```
+sudo -s /bin/dd if=/dev/zero of=/var/swap.1 bs=1M count=1024
+sudo -s /sbin/mkswap /var/swap.1
+sudo -s /sbin/swapon /var/swap.1
+```
