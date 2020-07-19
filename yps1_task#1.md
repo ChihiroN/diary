@@ -27,8 +27,52 @@
 
 ***
 
-とりあえずこここまで
-
 ## SSH接続、環境設定、アップデート
 
+#### awsに接続する
+#### 参考
+- [win](https://www.dot-plus.com/cloud-service/aws/2935/#TeraTermSSH)
+- [mac](https://qiita.com/ai-2723/items/eb156cd4dd3ccfac8791)
 
+#### SElinuxの設定を無視する
+```
+sudo setenforce 0
+vi /etc/selinux/config
+```
+> SELINUX=disabled<br>
+getenfoceとコマンド打ってpermissiveが出れば成功
+
+#### 編集の前に元ファイルを保存する
+```
+sudo cp /etc/ssh/sshd_config /etc/ssh/sshd_config.org
+```
+.orgはオリジナルファイルたよーということを表現するときによく使うんだそうです
+
+
+
+#### AWSコンソールのセキュリティグループからルールを追加
+
+```sudo cp /etc/ssh/sshd_config /etc/ssh/sshd_config.org```
+```sudo vi /etc/ssh/sshd_config```
+
+> #Port 22　→Port ルールの追加で入力した番号<br>
+> #PermitRootLogin yes　→PermitRootLogin no<br>
+
+### エラーが表示されないことを確認 
+```sudo sshd -t```
+
+#### sshd再起動
+```sudo systemctl restart sshd```
+
+#### もういっこターミナルを立ち上げてssh接続できるかどうか確認してみよう
+
+#### ログインに成功したらアップデート
+```sudo yum update -y```
+
+[元ツイ1](https://twitter.com/yotaro__ok/status/1284454044077965313)<br>
+[元ツイ2](https://twitter.com/yotaro__ok/status/1284115619034484737)<br>
+
+#### 余裕があれば
+```sudo -s /bin/dd if=/dev/zero of=/var/swap.1 bs=1M count=1024```
+```sudo -s /sbin/mkswap /var/swap.1```
+```sudo -s /sbin/swapon /var/swap.1```
