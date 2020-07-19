@@ -52,8 +52,10 @@ sudo cp /etc/ssh/sshd_config /etc/ssh/sshd_config.org
 
 #### AWSコンソールのセキュリティグループからルールを追加
 
-```sudo cp /etc/ssh/sshd_config /etc/ssh/sshd_config.org```
-```sudo vi /etc/ssh/sshd_config```
+```
+sudo cp /etc/ssh/sshd_config /etc/ssh/sshd_config.org
+sudo vi /etc/ssh/sshd_config
+```
 
 > #Port 22　→Port ルールの追加で入力した番号<br>
 > #PermitRootLogin yes　→PermitRootLogin no<br>
