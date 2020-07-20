@@ -80,3 +80,4 @@ sudo -s /bin/dd if=/dev/zero of=/var/swap.1 bs=1M count=1024
 sudo -s /sbin/mkswap /var/swap.1
 sudo -s /sbin/swapon /var/swap.1
 ```
+#### [すごくよくまとまっている学習記録](https://paca-gatsby.netlify.app/2020-07-17/)
