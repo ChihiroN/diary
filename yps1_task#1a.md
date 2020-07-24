@@ -24,11 +24,22 @@ $sudo vi /etc/chrony.conf
 サーバ種別や環境をより直感的に識別するためにプロンプトの色を変えておくと便利。<br>
 BashのPromptの書式に関する情報は、PS1というShell変数に格納されているので、exprotsコマンドで変数を設定する。<br>
 
+
 ```
 export PS1='\[\033[01;36m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ 
 ```
+ファイルの作成
+```
+vi .bash_profile//何もせず終了
+vi .bashrc
+```
+以下を追記
+> PS1="\[\033[36m\]\h:\W \u\$\[\033[0m\]"
+
+ターミナルを再起動すると文字色が変更する
 
 [参考](https://qiita.com/wildeagle/items/5da17e007e2c284dc5dd)
+[ターミナルの文字色を変える](https://qiita.com/hirose/items/bbfeeb3fe50725f2a7a7)
 
 #### bash-complication
 入力補間機能。TABキーを押すとコマンドを補完してくれる。
