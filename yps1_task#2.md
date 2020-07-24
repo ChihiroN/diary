@@ -194,7 +194,8 @@ sudo systemctl restart php-fpm
 
 ブラウザでアクセスするとLaravelが表示される
 
-#### 
+#### VSCodeからEC2に接続する
+[VSCode の Remote – SSH 機能を使って EC2 上で開発する](http://blog.serverworks.co.jp/tech/2020/02/20/vscode-remote-ssh/)
 
-[参考](https://paca-gatsby.netlify.app/2020-07-23/)
+[参考](https://paca-gatsby.netlify.app/2020-07-23/)<br>
 [元ツイ](https://twitter.com/yotaro__ok/status/1286271610815516672)
