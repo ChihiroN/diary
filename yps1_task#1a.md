@@ -53,4 +53,7 @@ bash-completionの定義ファイルは、次のディレクトリ配下に存�
 
 [参考](https://qiita.com/yamada-hakase/items/bf163f0924e4d925fefb)
 
+#### 時刻表示をＪＳＴにする
+[参考](https://www.atmarkit.co.jp/ait/articles/1811/30/news060.html)
+
 [追加課題の元ツイ](https://twitter.com/webappli_cot/status/1285946242355220480)
