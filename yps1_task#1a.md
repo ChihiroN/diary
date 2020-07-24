@@ -38,7 +38,7 @@ vi .bashrc
 
 ターミナルを再起動すると文字色が変更する
 
-[参考](https://qiita.com/wildeagle/items/5da17e007e2c284dc5dd)
+[参考](https://qiita.com/wildeagle/items/5da17e007e2c284dc5dd)<br>
 [ターミナルの文字色を変える](https://qiita.com/hirose/items/bbfeeb3fe50725f2a7a7)
 
 #### bash-complication
