@@ -49,16 +49,16 @@ php artisan test_command
 ターミナルからデータベースの選手名が表示されればOK
 
 ##### 日本語入力できない問題の解決
-[MySQLクライアントに日本語が入力できない理由](https://developer.suzna.com/entry/2018/04/23/103928)
+[MySQLクライアントに日本語が入力できない理由](https://developer.suzna.com/entry/2018/04/23/103928)  
 SQLのファイルを作ってそれを読み込ませることで解決する。
 
 ```
 cd /var/tmp
 vi get_players.sql//新規ファイル作成
 ```
-> use worldcup2014db;
-> select * from players where name = ‘酒井’;
-get_playsers.sqlを読みこんで使ってみる
+> use worldcup2014db;  
+> select * from players where name = ‘酒井’;  
+get_playsers.sqlを読みこんで使ってみる  
 ```
 mysql -u root -p  < ./get_players.sql
 mysql -u root -p  < ./get_players.sql > ./out.txt // ファイル出力もできる
@@ -72,16 +72,16 @@ mysql -u root -p  < ./get_players.sql > ./out.txt // ファイル出力もでき
 sudo cp /etc/php.ini /etc/php.ini.org
 sudo vi /etc/php.ini
 ```
-[CentOSにPHP7をインストールしたらやっておくべき初期設定 ](https://affiwork.net/php-settings/)
-[解答](https://github.com/yotaro-ok/yps/issues/5#issuecomment-667150729)
-設定が終わったらphp-fpmとNginxを再起動して設定を有効化。
+[CentOSにPHP7をインストールしたらやっておくべき初期設定 ](https://affiwork.net/php-settings/)  
+[解答](https://github.com/yotaro-ok/yps/issues/5#issuecomment-667150729)  
+設定が終わったらphp-fpmとNginxを再起動して設定を有効化。  
 ```
 sudo systemctl restart php-fpm
 sudo systemctl restart nginx
 ```
-エラーログファイルの作成  
-php.iniの末尾にしたをくわえる
-> errorlog= “/var/log/phperrors.log”
+エラーログファイルの作成   
+php.iniの末尾にしたをくわえる  
+> errorlog= “/var/log/phperrors.log”  
 ```
 sudo touch /var/log/php_errors.log
 sudo chown nginx:nginx /var/log/php_errors.log
@@ -126,7 +126,7 @@ vi .git/config
 ```
 ssh-keygen -t rsa -b 4096 -C "メアド"
 ```
-エンターキー押下
+エンターキー押下  
 パスワード入力×２
 ```
 cat ~/.ssh/id_rsa.pub
@@ -140,7 +140,7 @@ git pull
 git push origin master
 ```
 
-[develop、featureブランチを切る](https://qiita.com/Naoki206/items/e5520453f92dcd4274f1)
+[develop、featureブランチを切る](https://qiita.com/Naoki206/items/e5520453f92dcd4274f1)  
 
 ```
 git branch //masterにいることを確認
@@ -151,6 +151,6 @@ git push origin develop // リポートリポジトリに反映
 ```
 Githubにdevelopブランチができていれば成功
 
-パスフレーズの入力をするとプッシュできる
-[元ツイ](https://twitter.com/yotaro__ok/status/1289185995875745794)
-[参考](https://paca-gatsby.netlify.app/2020-07-30/)
+パスフレーズの入力をするとプッシュできる  
+[元ツイ](https://twitter.com/yotaro__ok/status/1289185995875745794)  
+[参考](https://paca-gatsby.netlify.app/2020-07-30/)  
