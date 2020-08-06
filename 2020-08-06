@@ -24,3 +24,7 @@ sudo systemctl start nginx//システムの再起動
 sudo systemctl start php-fpm
 sudo systemctl start mysqld
 ```
+
+[スワップ領域について](http://alctail.sakura.ne.jp/tip/linux_kannrenn/linux/)  
+[パーミッションについて](http://web.tku.ac.jp/~densan/local/permission/permission.htm)  
+[Composerとは？](https://gomiba.co.in/blog/archives/883)
