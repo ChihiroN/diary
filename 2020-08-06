@@ -1,0 +1,26 @@
+[Laravel 7.23 Released](https://twitter.com/laravelnews/status/1290996020676046857)  
+
+#### laravelのアップデート
+```
+cat /proc/swaps//swap領域の確認
+swapoff /var/swap.1
+
+cd /var/www/html/yps
+composer update
+
+sudo systemctl stop nginx//システムの停止
+sudo systemctl stop php-fpm
+sudo systemctl stop mysqld
+
+sudo -s /bin/dd if=/dev/zero of=/var/swap.1 bs=1M count=1024
+sudo -s /sbin/mkswap /var/swap.1
+sudo -s /sbin/swapon /var/swap.1
+
+cd /var/www/html/yps
+composer update
+php artisan -V
+
+sudo systemctl start nginx//システムの再起動
+sudo systemctl start php-fpm
+sudo systemctl start mysqld
+```
