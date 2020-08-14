@@ -97,7 +97,6 @@ WordPressの画面に戻り、プラグインのところにあるSSH SFTP Updat
 cd /var/www/html/wwpp/
 sudo chmod 664 ./wp-config.php
 ```
-テーマを選んで、セキュリティ設定
 
 [元ツイ](https://twitter.com/yotaro__ok/status/1292432592973647872)  
 [参考1](https://paca-gatsby.netlify.app/2020-08-09/)  
