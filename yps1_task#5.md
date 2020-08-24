@@ -147,3 +147,16 @@ sudo chown -R centos:nginx /var/www/html/yps
 　②functionを１つ追加
 　③controllerからviewに変数渡し
 [参考](https://www.ritolab.com/entry/49)
+
+#### npm nodejsのアップデート
+
+```
+composer require laravel/ui
+php artisan ui bootstrap
+sudo yum remove node npm -y
+curl -sL https://rpm.nodesource.com/setup_12.x | sudo bash -
+sudo yum install nodejs -y
+cd /var/www/html/yps
+rm -rf ./node_modules
+npm install && npm run dev
+```
