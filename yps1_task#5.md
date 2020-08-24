@@ -148,7 +148,8 @@ sudo chown -R centos:nginx /var/www/html/yps
 　③controllerからviewに変数渡し
 [参考](https://www.ritolab.com/entry/49)
 
-#### npm nodejsのアップデート
+#### ※npm nodejsのアップデート
+[参考](https://cpoint-lab.co.jp/article/201811/6351/)
 
 ```
 composer require laravel/ui
