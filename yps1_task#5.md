@@ -161,3 +161,7 @@ cd /var/www/html/yps
 rm -rf ./node_modules
 npm install && npm run dev
 ```
+#### 追加課題
+```
+insert into players values (737,12,26,'MF','CN','YPS1','1990-08-26',158,55,CURRENT_TIMESTAMP,NULL,NULL,NULL);
+```
