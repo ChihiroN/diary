@@ -162,6 +162,10 @@ rm -rf ./node_modules
 npm install && npm run dev
 ```
 #### 追加課題
+1.得点王として自分を追加する。  
+mysqlからplayersとgoalsにデータを追加する。  
 ```
 insert into players values (737,12,26,'MF','CN','YPS1','1990-08-26',158,55,CURRENT_TIMESTAMP,NULL,NULL,NULL);
 ```
+2.二人の酒井選手にそれぞれ名前を追加する  
+3.データベースを論理削除してみる  
