@@ -169,3 +169,7 @@ insert into players values (737,12,26,'MF','CN','YPS1','1990-08-26',158,55,CURRE
 ```
 2.二人の酒井選手にそれぞれ名前を追加する  
 3.データベースを論理削除してみる  
+[課題](https://twitter.com/yotaro__ok/status/1298973532647378944)  
+
+[解答](https://twitter.com/yotaro__ok/status/1299657766265479168)  
+[参考](https://twitter.com/miyupacaaa/status/1299748646620078081)  
