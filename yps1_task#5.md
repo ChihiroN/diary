@@ -168,6 +168,12 @@ mysqlからplayersとgoalsにデータを追加する。
 insert into players values (737,12,26,'MF','CN','YPS1','1990-08-26',158,55,CURRENT_TIMESTAMP,NULL,NULL,NULL);
 ```
 2.二人の酒井選手にそれぞれ名前を追加する  
+```
+select * from players where name LIKE '酒井%';
+update players set name = '酒井宏樹' where id=723;
+update players set name = '酒井高徳' where id=724;
+select name,club,birth from players where name like '酒井%';
+```
 3.データベースを論理削除してみる  
 [課題](https://twitter.com/yotaro__ok/status/1298973532647378944)  
 
